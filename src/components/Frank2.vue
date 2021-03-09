@@ -1,6 +1,6 @@
 <template>
     <div>
-        我的组件
+        Frank2
     </div>
 </template>
 <script>
