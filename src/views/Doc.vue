@@ -31,25 +31,21 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-    .banner {
-        padding: 100px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background: lightgreen;
-        > .actions{
-            padding: 8px 0;
-            a {
-            margin:0 8px;
-            background: #fff;
-            display: inline-block;
-            $h: 28px;
-            height: $h;
-            line-height: $h;
-            border-radius: $h/2;
-            padding: 0 8px;
-            }
+    aside {
+    background: lightblue;
+    width: 150px;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    > h2 {
+        margin-bottom: 4px;
+    }
+    > ol {
+        > li {
+        padding: 4px 0;
         }
     }
+    }
+   
 </style>
