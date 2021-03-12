@@ -1,5 +1,5 @@
 <template>
-    <button class="gulu-swit" @click="toggle" :class="{'gulu-checked':value}">
+    <button class="gulu-swit" @click="toggle" :class="{'gulu-checked':value}" >
         <span>
         </span>
     </button>

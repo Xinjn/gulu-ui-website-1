@@ -18,6 +18,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
   $h: 22px;
   $h2: $h - 4px;
   button{
@@ -27,6 +28,7 @@ export default {
     background: #bfbfbf;
     border-radius: $h/2;
     position: relative;
+   
   }
   span{
     position: absolute;
