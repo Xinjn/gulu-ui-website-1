@@ -79,7 +79,6 @@ export default {
             background: darken(white, 5%);;
             }
         }
-        &.gulu-theme-button{
             &.gulu-size-big{
             font-size: 24px;
             height: 48px;
@@ -90,7 +89,5 @@ export default {
             height: 20px;
             padding: 0 4px;
             }
-        }
-        
     }
 </style>
