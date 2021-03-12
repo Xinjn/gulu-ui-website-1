@@ -45,8 +45,10 @@ export default {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  
   > .nav {
     flex-shrink: 0;
+    z-index: 2300;
   }
   > .content {
     flex-grow: 1;
@@ -56,6 +58,7 @@ export default {
       padding-left: 0; 
     }
   }
+ 
 }
 .content {
   display: flex;
@@ -69,6 +72,7 @@ export default {
   }
 }
 aside {
+  z-index: 1;
   background: lightblue;
   width: 150px;
   padding: 16px;
@@ -86,8 +90,9 @@ aside {
     }
   }
 }
+
 main {
   overflow: auto;
-  
+
 }
 </style>
