@@ -62,13 +62,11 @@ export default {
         const titles = defaults.map((tag)=> {
             return tag.props.title
         })
-        const current = defaults.filter((tag)=>{
-            return tag.props.title === props.selected
-        })
+
         const select = (title:string)=>{
             context.emit('update:selected',title)
         }
-        return {defaults,titles,current,select,indicator,container,selectedItem}
+        return {defaults,titles,select,indicator,container,selectedItem}
         
     }
 }
