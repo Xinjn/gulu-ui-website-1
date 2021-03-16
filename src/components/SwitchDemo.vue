@@ -1,58 +1,76 @@
 
 <template>
-    <div>
-        <Switch v-model:value="bool"  />
+<div>
+  <h1>Switch 组件示例 </h1>
+  <div class="demo">
+    <h2>常规用法</h2>
+    <div class="demo-component">
+      <Switch1Demo/>
     </div>
+    <div class="demo-actions">
+      <Button>查看代码</Button>
+    </div>
+    <div class="demo-code">
+      <pre>&lt;Switch v-model:value="bool" /&gt;</pre>
+    </div>
+  </div>
+  <div class="demo">
+    <h2>支持 disabled </h2>
+    <div class="demo-component">
+      <Switch2Demo/>
+    </div>
+    <div class="demo-actions">
+      <Button>查看代码</Button>
+    </div>
+    <div class="demo-code">
+      <pre>&lt;Switch v-model:value="bool" disabled /&gt;</pre>
+    </div>
+  </div>
+</div>
 </template>
 
 <script lang="ts">
 import Switch from '../lib/Switch.vue'
-import { ref } from 'vue'
+import Button from '../lib/Button.vue'
+import {
+  ref
+} from 'vue'
+import Switch1Demo from '../components/Switch1.demo.vue'
+import Switch2Demo from '../components/Switch2.demo.vue'
 export default {
-    components:{Switch},
+    components:{Switch,Button,Switch1Demo,Switch2Demo},
     setup(){
         const bool = ref(false)
-        return {bool}
+        return {bool,Switch1Demo,Switch2Demo}
     }
 }
 </script>
 
 <style lang="scss" scoped>
-
-  $h: 22px;
-  $h2: $h - 4px;
-  button{
-    height: $h;
-    width: $h*2;
-    border: none;
-    background: #bfbfbf;
-    border-radius: $h/2;
-    position: relative;
-   
+$border-color: #d9d9d9;
+.demo {
+  border: 1px solid $border-color;
+  margin: 16px 0 32px;
+  >h2 {
+    font-size: 20px;
+    padding: 8px 16px;
+    border-bottom: 1px solid $border-color;
   }
-  span{
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    height: $h2;
-    width: $h2;
-    background:white;
-    border-radius: $h2 / 2;
-    transition: all 250ms;
-  } 
-  button.checked{
-    background: #1890ff;
+  &-component {
+    padding: 16px;
   }
-  button.checked > span {
-    left: calc(100% - #{$h2} - 2px);
+  &-actions {
+    padding: 8px 16px;
+    border-top: 1px dashed $border-color;
   }
-  button:focus{
-    outline: none;
+  &-code {
+    padding: 8px 16px;
+    border-top: 1px dashed $border-color;
+    >pre {
+      line-height: 1.1;
+      font-family: Consolas, 'Courier New', Courier, monospace;
+      margin: 0;
+    }
   }
-  button:active{
-    > span {width: $h2 + 4px;}
-  }
-  button.checked:active{
-    > span {width: $h2 + 4px; margin-left: -4px;}
-  }
+}
 </style> 
