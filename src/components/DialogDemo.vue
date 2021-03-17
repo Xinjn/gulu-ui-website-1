@@ -1,8 +1,8 @@
 <template>
-    <div>
+    <h1>
         Dialog 示例
-    </div>
-   <Demo :component="Dialog1Demo" />
+    </h1>
+    <Demo :component="Dialog1Demo" />
     <Demo :component="Dialog2Demo" />
 </template>
 
