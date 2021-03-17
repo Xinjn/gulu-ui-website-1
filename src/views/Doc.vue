@@ -53,7 +53,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+$aside-index:10;
 .layout {
   display: flex;
   flex-direction: column;
@@ -85,7 +85,7 @@ export default {
   }
 }
 aside {
-  z-index: 1;
+  z-index: $aside-index;
   background: lightblue;
   width: 150px;
   padding: 16px 0;
