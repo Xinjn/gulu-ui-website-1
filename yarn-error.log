@@ -1,5 +1,5 @@
 Arguments: 
-  D:\Software\node.js\node.exe D:\Software\Yarn\bin\yarn.js dev
+  D:\Software\node.js\node.exe D:\Software\Yarn\bin\yarn.js --v
 
 PATH: 
   D:\Software\cmder\vendor\git-for-windows\mingw64\bin;D:\Software\cmder\vendor\git-for-windows\usr\bin;C:\Users\NING MEI\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\Common Files\microsoft shared\TigerKin;D:\Software\Yarn\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Common Files\microsoft shared\TigerKin;D:\Web\Jirengu\task\jsxbin_to_jsx;D:\Software\node.js;C:\Users\NING MEI\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\NING MEI\AppData\Local\Yarn\bin;D:\压缩;C:\Users\NING MEI\AppData\Local\Yarn\bin;C:\Users\NING MEI\AppData\Roaming\npm
@@ -14,12 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  SyntaxError: D:\Web\Jirengu\project\Vue3\gulu-ui-1\package.json: Unexpected token } in JSON at position 256
-      at JSON.parse (<anonymous>)
-      at D:\Software\Yarn\lib\cli.js:1625:59
-      at Generator.next (<anonymous>)
-      at step (D:\Software\Yarn\lib\cli.js:310:30)
-      at D:\Software\Yarn\lib\cli.js:321:13
+  Error: EPERM: operation not permitted, unlink 'D:\Web\Jirengu\project\Vue3\gulu-ui-1\node_modules\esbuild\esbuild.exe'
 
 npm manifest: 
   {
@@ -30,16 +25,16 @@ npm manifest:
       "build": "vite build"
     },
     "dependencies": {
-      "github-markdown-css": "4.0.0",
-      "marked": "1.1.1",
-      "vue": "3.0.0-rc.1",
-      "vue-router": "4.0.0-beta.3",
-     
+      "github-markdown-css": "^4.0.0",
+       "marked": "^1.1.1",
+      "vue": "^3.0.0-rc.1",
+      "vue-router": "4.0.0-beta.3"
     },
     "devDependencies": {
-      "@vue/compiler-sfc": "3.0.0-rc.1",
+      "@vue/compiler-sfc": "^3.0.0-rc.1",
+      
       "sass": "1.26.10",
-      "vite": "1.0.0-rc.1"
+      "vite": "^1.0.0-rc.1"
     }
   }
 

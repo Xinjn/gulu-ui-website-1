@@ -37,7 +37,8 @@ import {
 } from 'vue'
 import Switch1Demo from '../components/Switch1.demo.vue'
 import Switch2Demo from '../components/Switch2.demo.vue'
-console.log(Switch1Demo.__sourceCode)
+// console.log(Switch1Demo)
+// console.log(Switch1Demo.__sourceCode)
 export default {
     components:{Switch,Button,Switch1Demo,Switch2Demo},
     setup(){
