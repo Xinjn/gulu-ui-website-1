@@ -1,11 +1,10 @@
 {
-  "name": "gulu-ui-1",
-  "version": "0.0.4",
+  "name": "vue3-wheels",
+  "version": "0.0.1",
   "files": [
     "dist/lib/*"
   ],
   "main": "dist/lib/gulu.js",
-  "module": "dist/lib/gulu.esm.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
